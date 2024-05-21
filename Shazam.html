@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="Aquaman.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="#home" class="logo">
+            <img src="Homepage/1.png" title="Waner Bros" alt="Waner Bros"> 
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="index.html" class="home-active">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="TVShows.html">TV Shows</a></li>
+            <li><a href="Games and apps.html">Games & Apps</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>  
+        <img src="Dark & Light Mode/moon.png" id="icon">
+    </header>
+
+    <div class="breaking-bad">
+        <div class="movie-description">
+            <div class="movie-image">
+                <img src="Aquaman/Shazam.jpg" alt="Shazam">
+            </div>
+            <div class="movie-content">
+                <div class="movie-trailer">
+                    <h1>SHAZAM! FURY OF THE GODS</h1>
+                    <div class="movie-type">
+                        <p>Action</p>
+                        <div class="line"></div>
+                        <p>Comedy</p>
+                        <div class="line"></div>
+                        <p>Adventure</p>
+                    </div>
+                </div>
+                <div class="imdb">
+                    <p>IMDb: 5.5/10</p>
+                    <p>2h 10m</p>
+                    <p>PG-13</p>
+                    <p>2023</p>
+                    <p>Director: <span>David F. Sandberg</span></p>
+                    <p>Actors: <span>Zachary Levi, Asher Angel, Jack Dylan Grazer</span></p>
+                
+                    <div class="trailer">
+                    
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=Zi88i4CpHe4" target="_blank">
+                            <button class="btn-trailer">
+                                Watch Trailer
+                            </button>
+                            </a>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="movie-desc-2">
+    <h2>Description</h2>
+    <p>Shazam! Fury of the Gods reunites the Shazam family for another adventure. Billy Batson transforms into Shazam with his magic word, facing new threats alongside his superhero siblings. Rachel Zegler, Lucy Liu, and Helen Mirren join the cast. The movie hits theaters worldwide on December 15th, 2022 (internationally) and December 21st, 2022 (North America).
+     </p>
+     <div class="bb-img">
+        <img src="Aquaman/Shazam scene.jpg" alt="Shazam">
+     </div>
+</div>
+
+    <!-- footer  -->
+    <section class="footer">
+        <a href="" class="logo">
+            <img src="Homepage/1.png" alt="Waner Bros">
+        </a>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    <!-- Copyright  -->
+    <div class="copyright">
+        <p>&#169; TM & © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "Dark & Light Mode/sun.png";
+        }else{
+            icon.src = "Dark & Light Mode/moon.png";
+        }
+     }
+
+   
+    </script>
+</body>
+</html>

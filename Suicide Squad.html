@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="Aquaman.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="#home" class="logo">
+            <img src="Homepage/1.png" title="Waner Bros" alt="Waner Bros"> 
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <!-- menu  -->
+        <ul class="navbar">
+            <li><a href="index.html" class="home-active">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="TVShows.html">TV Shows</a></li>
+            <li><a href="Games and apps.html">Games & Apps</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>  
+        <img src="Dark & Light Mode/moon.png" id="icon">
+    </header>
+
+    <div class="breaking-bad">
+        <div class="movie-description">
+            <div class="movie-image">
+                <img src="Aquaman/suicidesquad.jpg" alt="Suicide Squad">
+            </div>
+            <div class="movie-content">
+                <div class="movie-trailer">
+                    <h1>Suicide Squad: Kill the Justice League</h1>
+                    <div class="movie-type">
+                        <p>Action</p>
+                        <div class="line"></div>
+                        <p>Comedy</p>
+                        <div class="line"></div>
+                        <p>Adventure</p>
+                    </div>
+                </div>
+                <div class="imdb">
+                    <p>IMDb: 4.2/10</p>
+                    <p>Video Game</p>
+                    <p>M</p>
+                    <p>2024</p>
+                    <p>Director: <span>Adam Doherty, Rasmus Højengaard, Axel Rydby</span></p>
+                    <p>Stars: <span>Tara Strong, Daniel LapaineBumper, Robinson</span></p>
+                
+                    <div class="trailer">
+                    
+                        <div>
+                            <a href="https://www.suicidesquadgame.com/en-us/purchase" target="_blank">
+                            <button class="btn-trailer">
+                                Buy Now
+                            </button>
+                            </a>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="movie-desc-2">
+    <h2>About the game</h2>
+    <p>From Rocksteady Studios, the creators of the Batman Arkham series, Suicide Squad: Kill the Justice League is a genre-defying third-person action shooter where the ultimate band of misfits must do the impossible to save the world: Kill the Justice League.
+     </p>
+     <div class="bb-img">
+        <img src="Aquaman/suicide squad scene.jpg" alt="Suicide Squad">
+     </div>
+</div>
+
+    <!-- footer  -->
+    <section class="footer">
+        <a href="" class="logo">
+            <img src="Homepage/1.png" alt="Waner Bros">
+        </a>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    <!-- Copyright  -->
+    <div class="copyright">
+        <p>&#169; TM & © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "Dark & Light Mode/sun.png";
+        }else{
+            icon.src = "Dark & Light Mode/moon.png";
+        }
+     }
+
+   
+    </script>
+</body>
+</html>
